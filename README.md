@@ -1,6 +1,6 @@
 # Mortgage calculations
-- $n$ : number of payment periods
 - $x$ : initial size of the mortgage
+- $n$ : number of payment periods
 - $i=1,2,...,n$ : index of an payment period
 - $r_{i}$ : interest rate during the period $i$
 - $x_{i}$ : size of the mortgage at the start of period $i$
@@ -34,3 +34,12 @@ Annuity mortage has fixed total payment each period $p_{1}=p_{2}=...=p_{n}=p.$
 Also, we use fixed interest rate $r_{1}=r_{2}=...=r_{n}=r$ for the calculations.
 In practice, we should use an interest rate $r$ that we believe to be the highest interest rate during the period, that is, $r_{i} \le r$ for all $i$.
 
+$$y_{1}=p-x_{1} \cdot r$$
+
+$$
+y_{i}=p-x_{i} \cdot r \\
+y_{i}=p-(x_{i-1}-y_{i-1} )\cdot r \\
+y_{i}=(p-x_{i-1}\cdot r) + y_{i-1}\cdot r \\
+y_{i}=y_{i-1} + y_{i-1}\cdot r \\
+y_{i}=(1+r) y_{i-1},\quad i=2,3,...,n
+$$
