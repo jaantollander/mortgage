@@ -34,20 +34,29 @@ Annuity mortage has fixed total payment each period $p_{1}=p_{2}=...=p_{n}=p.$
 Also, we use fixed interest rate $r_{1}=r_{2}=...=r_{n}=r$ for the calculations.
 In practice, we should use an interest rate $r$ that we believe to be the highest interest rate during the period, that is, $r_{i} \le r$ for all $i$.
 
+Installment payment on the first period.
+
 $$y_{1}=p-x_{1} \cdot r$$
+
+Installment payment on other periods.
 
 $$\begin{aligned}
 y_{i}&=p-x_{i} \cdot r \\
 y_{i}&=p-(x_{i-1}-y_{i-1} )\cdot r \\
 y_{i}&=(p-x_{i-1}\cdot r) + y_{i-1}\cdot r \\
 y_{i}&=y_{i-1} + y_{i-1}\cdot r \\
-y_{i}&=(1+r)\cdot y_{i-1},\quad i=2,3,...,n
+y_{i}&=(1+r)\cdot y_{i-1},\quad i=2,3,...,n \\
+y_{i}=(1+r)^{i-1}\cdot y_{1},\quad i=2,3,...,n
 \end{aligned}$$
 
-$$y_{i}=(1+r)^{i-1}\cdot y_{1},\quad i=2,3,...,n$$
+We pay the full mortgage
 
 $$\sum_{i=1}^{n} y_{i} = (p-x_{1}\cdot r) \cdot \sum_{i=1}^{n} (1+r)^{i-1} = x_{1}$$
 
-$$k_{r,n}=\sum_{i=1}^{n} (1+r)^{i-1}$$
+We receive the following relationship between the total payment each period and the size of the mortgage.
 
 $$x_{1} = p\cdot \frac{k_{r,n}}{1+k_{r,n}\cdot r}$$
+
+where
+
+$$k_{r,n}=\sum_{i=1}^{n} (1+r)^{i-1}.$$
