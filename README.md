@@ -27,4 +27,7 @@ $$\sum_{i=1}^{n} y_{i}=x_{0}$$
 
 
 ## Annuity mortgage
+Annuity mortage has fixed total payment each period $p_{1}=p_{2}=...=p_{n}=p.$
+Also, we use fixed interest rate $r_{1}=r_{2}=...=r_{n}=r$ for the calculations.
+In practice, we should use an interest rate $r$ that we believe to be the highest interest rate during the period, that is, $r_{i} < r$ for all $i$.
 
