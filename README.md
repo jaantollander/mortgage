@@ -1,5 +1,4 @@
-Mortage calculations
-
+# Mortage calculations
 Symbols
 
 - $n$ : number of installment periods
@@ -13,8 +12,13 @@ Symbols
 
 Equations
 
-- $x_{i}=x_{i-1}-y_{i-1}$ for all $i$
-- $p_{i}=y_{i}+z_{i}$ for all $i$
-- $z_{i}=x_{i}\cdot r_{i}$ for all $i$
-- $\sum_{i=1}^{n}y_{i}=x_{0}$
+For all $i\in\{1,2,...,n\}$
+
+$$x_{i}=x_{i-1}-y_{i-1}$$
+
+$$p_{i}=y_{i}+z_{i}$ for all $i$$
+
+$$z_{i}=x_{i}\cdot r_{i}$$
+
+$$\sum_{i=1}^{n}y_{i}=x_{0}$$
 
