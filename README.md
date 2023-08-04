@@ -36,10 +36,10 @@ In practice, we should use an interest rate $r$ that we believe to be the highes
 
 $$y_{1}=p-x_{1} \cdot r$$
 
-$$
+$$\begin{aligned}
 y_{i}=p-x_{i} \cdot r \\
 y_{i}=p-(x_{i-1}-y_{i-1} )\cdot r \\
 y_{i}=(p-x_{i-1}\cdot r) + y_{i-1}\cdot r \\
 y_{i}=y_{i-1} + y_{i-1}\cdot r \\
 y_{i}=(1+r) y_{i-1},\quad i=2,3,...,n
-$$
+\end{aligned}$$
