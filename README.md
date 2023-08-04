@@ -44,8 +44,10 @@ y_{i}&=y_{i-1} + y_{i-1}\cdot r \\
 y_{i}&=(1+r)\cdot y_{i-1},\quad i=2,3,...,n
 \end{aligned}$$
 
-$$y_{i}=(1+r)^{i-1} y_{1},\quad i=2,3,...,n$$
+$$y_{i}=(1+r)^{i-1}\cdot y_{1},\quad i=2,3,...,n$$
 
-$$\begin{aligned}
-\sum_{i=1}^{n} y_{i} = (p-x_{1}\cdot r) \cdot \sum_{i=1}^{n} (1+r)^{i-1} = x_{1}
-\end{aligned}$$
+$$\sum_{i=1}^{n} y_{i} = (p-x_{1}\cdot r) \cdot \sum_{i=1}^{n} (1+r)^{i-1} = x_{1}$$
+
+$$k_{r,n}=\sum_{i=1}^{n} (1+r)^{i-1}$$
+
+$$x_{1} = p\cdot \frac{k_{r,n}}{1+k_{r,n}\cdot r}$$
