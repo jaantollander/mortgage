@@ -46,7 +46,7 @@ y_{i}&=p-(x_{i-1}-y_{i-1} )\cdot r \\
 y_{i}&=(p-x_{i-1}\cdot r) + y_{i-1}\cdot r \\
 y_{i}&=y_{i-1} + y_{i-1}\cdot r \\
 y_{i}&=(1+r)\cdot y_{i-1},\quad i=2,3,...,n \\
-y_{i}=(1+r)^{i-1}\cdot y_{1},\quad i=2,3,...,n
+y_{i}&=(1+r)^{i-1}\cdot y_{1},\quad i=2,3,...,n
 \end{aligned}$$
 
 We pay the full mortgage
