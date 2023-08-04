@@ -16,7 +16,7 @@ For all $i\in\{1,2,...,n\}$
 
 $$x_{i}=x_{i-1}-y_{i-1}$$
 
-$$p_{i}=y_{i}+z_{i}$ for all $i$$
+$$p_{i}=y_{i}+z_{i}$$
 
 $$z_{i}=x_{i}\cdot r_{i}$$
 
