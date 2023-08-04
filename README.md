@@ -1,24 +1,27 @@
 # Mortage calculations
-Symbols
+- $n$ : number of payment periods
+- $i=1,2,...,n$ : index of an payment period
+- $r_{i}$ : interest rate during the period $i$
+- $x_{0}$ : size of the mortage
+- $y_{0}=0$ : initial installament payment is zero
+- $x_{i}$ : size of the mortage at the start of period $i$
+- $y_{i}$ : installment payment on period $i$
+- $z_{i}$ : interest payment on period $i$
+- $p_{i}$ : total payment on period $i$
 
-- $n$ : number of installment periods
-- $i\in\{1,2,...,n\}$ : index of an installment period
-- $r_{i}$ : interest rate on the installment period
-- $x_{0}$ initial loan amount
-- $y_{0}=0$ initial payment is zero
-- $x_{i}$ amount of loan
-- $y_{i}$ installment payment
-- $z_{i}$ total payment
+We subtract the installment payment from previous period $i-1$ from mortage size of the previous period $i-1$ to obtain size of the mortage at current period $i$.
 
-Equations
+$$x_{i}=x_{i-1}-y_{i-1},\quad i=1,2,...,n$$
 
-For all $i\in\{1,2,...,n\}$
+We pay interest each period $i$ based on interest rate and size of the remaining mortage.
 
-$$x_{i}=x_{i-1}-y_{i-1}$$
+$$z_{i}=x_{i}\cdot r_{i},\quad i=1,2,...,n$$
 
-$$p_{i}=y_{i}+z_{i}$$
+The total payment on period $i$ consist of installment payment and interest payment.
 
-$$z_{i}=x_{i}\cdot r_{i}$$
+$$p_{i}=y_{i}+z_{i},\quad i=1,2,...,n$$
 
-$$\sum_{i=1}^{n}y_{i}=x_{0}$$
+We pay the full mortage during $n$ payment periods.
+
+$$\sum_{i=1}^{n} y_{i}=x_{0}$$
 
