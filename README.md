@@ -1,7 +1,6 @@
 # Mortgage calculations
-We denote the index of an payment period using $i$ such that $i=1,2,...,n$ where $n$ is the number of payment periods.
+We denote the index of an payment period using $i\in\{1,2,...,n\}$ where $n$ is the number of payment periods.
 For each period $i,$ we denote the interest rate as $r_{i},$ the size of the mortgage at the start of the period as $x_{i},$ installment payment as $y_{i},$ interest payment as $z_{i},$ and total payment as $p_{i}.$
-
 The initial size of the mortgate is $x_{1}.$
 
 We subtract the installment payment from previous period $i-1$ from mortgage size of the previous period $i-1$ to obtain size of the mortgage at current period $i$.
